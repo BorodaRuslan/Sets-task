@@ -4,9 +4,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class DataProvider {
-
-    // Products
-
     public static Set<String> getAllDataProducts(){
         Set<String> dataProducts = new HashSet<>();
         dataProducts.add("orange");

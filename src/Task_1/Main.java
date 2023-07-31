@@ -7,12 +7,12 @@ public class Main {
         System.out.println("Initial data");
         printDataProducts(DataProvider.getAllDataProducts());
         System.out.println("Updated data");
-        printDataProducts(updateDataProducts(DataProvider.getAllDataProducts()));
+        printDataProducts(updateDataProducts(DataProvider.getAllDataProducts(), "grape"));
 
     }
 
-    public static Set<String> updateDataProducts(Set<String> dataProducts) {
-        dataProducts.add("grape");
+    public static Set<String> updateDataProducts(Set<String> dataProducts, String nameProduct) {
+        dataProducts.add(nameProduct);
         return dataProducts;
     }
 
